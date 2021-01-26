@@ -372,7 +372,7 @@ class AlmanacModule extends IPSModule
         // Debug output
         $this->SendDebug('LINK: ', $url, 0);
         // read iCal URL as array
-        $ics = @file($url);
+        $ics = @file($url . '?k=LsunrdXh9TIBEFFIT4-NmxQpflV4PYPrbP2NrqZ3SCgiYCvHZo0pHVclzEO30QSqH30SWcMMkL-VxdWsbceDRqad1zTkg9YdiWuUnhNU0Yk');
         // error handling
         if ($ics === false) {
             $this->LogMessage($this->Translate('Could not load iCal data!'), KL_ERROR);
